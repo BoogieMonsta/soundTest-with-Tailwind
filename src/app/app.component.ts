@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { el } from '@elemaudio/core';
-import WebAudioRenderer from '@elemaudio/web-renderer';
+import WebRenderer from '@elemaudio/web-renderer';
 import { Notes } from './notes/notes';
 
-const core = new WebAudioRenderer();
+const core = new WebRenderer();
 let ctx = new AudioContext();
 
 const OFF = el.const({ value: 0 });
